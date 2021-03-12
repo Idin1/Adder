@@ -26,7 +26,8 @@ def banner():
 {re} ╩ {cy}└─┘┴─┘└─┘{re}╚═╝  ╚═╝{cy}└─┘┴└─┴ ┴┴  └─┘┴└─
 
             Version: 1.3
-     Modified by @Zippow
+     Modified by Idin
+     Telegram Id : @Zippow
         """)
 
 cpass = configparser.RawConfigParser()
@@ -104,7 +105,7 @@ n = 0
 for user in users:
     n += 1
     if n % 50 == 0:
-	    time.sleep(900)
+	    time.sleep(1)
 	    try:
 	        print ("Adding {}".format(user['id']))
 	        if mode == 1:
@@ -116,8 +117,8 @@ for user in users:
 	        else:
 	            sys.exit(re+"[!] Invalid Mode Selected. Please Try Again.")
 	        client(InviteToChannelRequest(target_group_entity,[user_to_add]))
-	        print(gr+"[+] Waiting for 60-180 sec ...")
-	        time.sleep(random.randrange(60, 180))
+	        print(gr+"[+] Waiting for 0-5 sec ...")
+	        time.sleep(random.randrange(0, 5))
 	    except PeerFloodError:
 	        print(re+"[!] Getting Flood Errors from Telegram. \n[!] Script is stopping for now. \n[!] Please try again after some time.")
 	    except UserPrivacyRestrictedError:
