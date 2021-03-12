@@ -1,8 +1,7 @@
 #!/bin/env python3
-# Modified by @AbirHasan2005
-# Telegram Group: http://t.me/linux_repo
+# Modified by Idin
+# Telegram Id: http://t.me/Zippow
 # Please give me credits if you use any codes from here.
-
 
 from telethon.sync import TelegramClient
 from telethon.tl.types import InputPeerUser
